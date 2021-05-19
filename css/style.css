@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Mountains+of+Christmas:wght@400;700&family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Newsreader', serif;
+    background:
+	repeating-linear-gradient(
+		50deg,
+		#fff,
+		#eee 10rem
+	),
+	repeating-linear-gradient(
+		-50deg,
+        #fff,
+		#eee 10rem
+	);
+	
+    background-blend-mode: multiply;
+    min-height:100vh;
+}
+
+section {
+    background-color:white;
+    max-width:8.5in;
+    margin:2rem auto;
+    padding:3rem;
+    box-shadow:5px 5px 5px 5px rgba(0,0,0,.25);
+}
+
+section dl {
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+section dt {
+    font-weight:bold;
+}
+
+section dd {
+    margin-bottom:.5rem;
+}
+
+.twoCol {
+    column-width: 4in;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Big Shoulders Display', cursive;
+    break-after:avoid-column;
+}
+h1 {
+    font-size:4rem;
+    padding:0px;
+    margin:0px;
+}
+h2 {
+    font-size:1.5rem;
+}
+
+img {
+    display:block;
+    width:100%;
+    max-width:8.5in;
+    margin:auto auto;
+}
+img.max5in {
+    max-width:5in;
+}
+
+figure {
+    border:1px solid #ccc;
+    margin:0px;
+    margin-bottom:1rem;
+    margin-right:1rem;
+    margin-left:auto;
+    margin-right:auto;
+    padding:1rem;
+    padding-bottom:.5rem;
+    border-top-right-radius:1rem;
+    border-bottom-left-radius:1rem;
+    display:inline-block;
+}
+figcaption {
+    font-family:'Big Shoulders Display', cursive;
+    font-weight:bold;
+    font-size:1.25rem;
+}
+
+.index {
+    font-weight:bold;
+    font-style:italic;
+}
+.index:target {
+    background-color: yellow;
+}
